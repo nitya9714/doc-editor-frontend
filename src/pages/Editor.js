@@ -93,7 +93,7 @@ const Editor = () => {
 
     useEffect(() => {
         if (valid) {
-            const socketServer = io('http://localhost:3002');
+            const socketServer = io('https://doc-editor-backend.onrender.com');
             setSocket(socketServer);
 
             return () => {
